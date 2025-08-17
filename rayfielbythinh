@@ -48,6 +48,6 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "script hub",
    Callback = function()
-   loadstring(game:HttpGet("https://github.com/scripthubekitten/eee/raw/refs/heads/main/eezas", true))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
    end,
 })
