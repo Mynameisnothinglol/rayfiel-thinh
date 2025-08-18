@@ -24,7 +24,7 @@ local Window = Rayfield:CreateWindow({
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
 
-   KeySystem = disable, -- Set this to true to use our key system
+   KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
       Title = "Untitled",
       Subtitle = "Key System",
@@ -49,6 +49,12 @@ local Button = Tab:CreateButton({
    Name = "script hub",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "kick",
+   Callback = function()
+   game.Players.LocalPlayer:kick()
    end,
 })
 local Tab = Window:CreateTab("setting", 4483362458) -- Title, Image
